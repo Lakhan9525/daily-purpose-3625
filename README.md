@@ -1,1 +1,1 @@
-# -daily-purpose-3625
+# daily-purpose-3625
