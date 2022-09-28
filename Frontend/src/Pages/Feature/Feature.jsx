@@ -324,7 +324,9 @@ import {
                 width={"full"}
               >
                 <Image
+
                   alt={"Hero Image"}
+
                   fit={"cover"}
                   align={"center"}
                   w={"100%"}
@@ -567,7 +569,9 @@ import {
                   }
                 />
               </Box>
+
             </Flex>
+            
           </Stack>
         </Container>
         <Container maxW={"7xl"}>
