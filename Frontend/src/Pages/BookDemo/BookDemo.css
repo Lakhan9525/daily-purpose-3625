@@ -1,0 +1,31 @@
+/* -----------------------Book Demo Page Css----------------- */
+
+.bookdemo {
+    padding: 15%;
+
+}
+
+/* ---------------------------Calendar Page Css-------------------------- */
+.calendar_div {
+    line-height: 25px;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.calendar_div .head {
+    /* border: 2px solid red; */
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+/* -----------------------Demo Section Css------------------------------- */
+.demo {
+    text-align: left;
+    line-height: 40px;
+}
+
