@@ -1,10 +1,10 @@
-import { Icon } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 import React from "react";
 
-const icon5 = () => {
+const Icon5 = () => {
   return (
     <div>
-      <Icon
+      <Image
         src="https://cdn-m.timecamp.com/img/greenbranding/features/icons-menu/invoicing.svg"
         alt="Invoicing"
       />
@@ -12,4 +12,4 @@ const icon5 = () => {
   );
 };
 
-export default icon5;
+export default Icon5;
