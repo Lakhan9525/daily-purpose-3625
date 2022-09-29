@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.leftdiv{
+    box-sizing: border-box;
+    padding-left: 2.5rem;
+    padding-top: 3rem;
+    width:51%;
+    /* border:1px solid; */
+}
+.leftheading{
+    font-size: 50px;
+    font-family: Poppins;
+    color: #1b1b20;
+    width:80%;
+    font-weight: 700;
+    margin:0.5rem 2.5rem;
+    line-height: 60px;
+}
+.leftsubheading{
+    font-size: 24px;
+    width:60%;
+    font-weight: 700;
+    margin-left: 2.5rem;
+    color:#767676
+}
+.chromebutton{
+    margin:1.5rem 2.5rem;
+    border-radius: 25px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    padding:10px 15px;
+    width:50%;
+}  
+.chromelogo{
+    font-weight: lighter;
+    font-size: 30px;
+}  
+.buttontext{
+    font-weight: 400;
+    font-size: 14px;
+}
+.companies{
+    margin:3rem 2.5rem;
+    display:flex;
+    align-items: center;
+    gap:25px;
+}
+.rightdiv{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 38%;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.loginheading {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 40px;
+}
+.facebookbutton{
+    width:75%;
+    margin:auto;
+    height:40px;
+    border-radius: 8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.googlebutton{
+    width:75%;
+    margin:auto;
+    height:40px;
+    border:1px solid silver;
+    border-radius: 8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.loginbutton{
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding:15px 10px 15px 10px;
+    font-size: 15px;
+    color:white;
+    font-weight: lighter;
+    width:25%;   
+}
