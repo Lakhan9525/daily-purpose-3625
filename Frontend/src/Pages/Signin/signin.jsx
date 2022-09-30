@@ -17,6 +17,9 @@ const Signin = () => {
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, []);
+  const handleGoogleAuth=()=>{
+    window.open('http://localhost:8080/auth/google','_self')
+  }
   return (
     <Box>
       {/* Navbar section */}
@@ -100,6 +103,7 @@ const Signin = () => {
           <Box
             className={styles.googlebutton}
             _hover={{ backgroundColor: "gray.100" }}
+            onClick={handleGoogleAuth}
           >
             <FcGoogle fontSize="25px" />
             <Text fontSize="14px" fontWeight="700" color="#8f7e77">
