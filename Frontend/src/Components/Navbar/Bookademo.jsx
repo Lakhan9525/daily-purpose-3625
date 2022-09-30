@@ -8,7 +8,7 @@ const Bookademo = () => {
         variant="ghost"
         width="4rem"
         borderRadius={5}
-        _hover={{ bg: "none", color: "blue" }}
+        _hover={{ bg: "none", color: "rgb(37,207,96)" }}
       >
         <Heading fontSize="md" color="gray.30">
           Book a Demo

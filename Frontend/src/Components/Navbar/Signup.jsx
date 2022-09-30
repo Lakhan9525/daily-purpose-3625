@@ -8,12 +8,16 @@ const Signup = ({ width, height, fontSize }) => {
       <Link to="/auth/register">
         <Button
           variant="solid"
-          colorScheme="messenger"
+          bgColor="rgb(247,184,1)"
+          color="white"
           width={width}
           height={height}
-          borderRadius={4}
+          borderRadius="30px"
+          _hover={{ bgColor: "orange" }}
         >
-          <Heading fontSize={fontSize}>Start tracking time</Heading>
+          <Heading textAlign="center" fontSize={fontSize}>
+            Start tracking time
+          </Heading>
         </Button>
       </Link>
     </div>

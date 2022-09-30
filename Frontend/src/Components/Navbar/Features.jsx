@@ -1,6 +1,8 @@
 import React from "react";
 import {
+  Box,
   Button,
+  ButtonGroup,
   Heading,
   List,
   ListItem,
@@ -36,7 +38,7 @@ const Features = () => {
             variant="ghost"
             width="7rem"
             borderRadius={5}
-            _hover={{ bg: "none", color: "blue" }}
+            _hover={{ bg: "none", color: "rgb(37,207,96)" }}
             onMouseEnter={onOpen}
             onMouseLeave={onClose}
           >
@@ -55,11 +57,35 @@ const Features = () => {
               onMouseLeave={onClose}
             >
               <List>
-                <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                  <Icon1 />
-                  <Text as="b" fontSize="md" color="gray.45">
+                <ListItem
+                  // _hover={{
+                  //   bgColor: "rgb(37,207,96)",
+                  //   color: "white",
+                  //   cursor: "pointer",
+                  // }}
+                  width="15rem"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                  display="-webkit-flex"
+                >
+                  {/* <ButtonGroup
+                    isAttached
+                    variant="ghost"
+                    width="15rem"
+                    borderRadius={5}
+                  > */}
+                  <Box>
+                    <Icon1 />
+                  </Box>
+                  <Box
+
+                  //width="7rem"
+                  // borderRadius={5}
+                  // _hover={{ bgColor: "rgb(37,207,96)", color: "blue" }}
+                  // color="gray.45"
+                  >
                     Automatic time tracking
-                  </Text>
+                  </Box>
+                  {/* </ButtonGroup> */}
                 </ListItem>
                 <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
                   <Icon2 />
