@@ -1,7 +1,6 @@
-import { DownloadIcon } from "@chakra-ui/icons";
 import { Box, Divider, HStack, Spacer, Stack } from "@chakra-ui/react";
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Blog from "./Blog";
 import Bookademo from "./Bookademo";
 import Features from "./Features";
