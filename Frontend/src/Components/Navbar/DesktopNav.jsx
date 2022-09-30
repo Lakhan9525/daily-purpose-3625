@@ -22,7 +22,7 @@ const DesktopNav = () => {
       }}
       width="100%"
       height="86px"
-      border="1px solid red"
+      //border="1px solid red"
       pt="1rem"
       boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
     >
