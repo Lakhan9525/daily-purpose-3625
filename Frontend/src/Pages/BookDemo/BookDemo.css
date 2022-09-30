@@ -1,11 +1,12 @@
 /* -----------------------Book Demo Page Css----------------- */
 
+/* ---------------------------Top Section Css------------------------ */
 .bookdemo {
     padding: 15%;
 
 }
 
-/* ---------------------------Calendar Page Css-------------------------- */
+/* ---------------------------Calendar Section Css-------------------------- */
 .calendar_div {
     line-height: 25px;
     margin: auto;
@@ -29,3 +30,66 @@
     line-height: 40px;
 }
 
+
+
+/* --------------------------------- Middle Section-------------------------------------- */
+.middle {
+    margin-bottom: 90px;
+}
+.background {
+    width: 100%;
+    background-color: #25CF60;
+    height: 400px;
+    padding: 25px;
+}
+.background h1 {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+
+}
+.background .images {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.review_container {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    text-align: left;
+}
+.review_card {
+    width: 20%;
+    background-color: white;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+
+}
+.review_card p{
+    font-size: medium;
+    margin-bottom: 50px;
+}
+.review_card h5, span {
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* -----------------------------------Bottom Section CSS--------------------------- */
+.bottom {
+    margin-top: 35%;
+}
+.bottom_section h3 {
+    color: #25CF60;
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+.bottom_section h1 {
+    font-weight: bolder;
+    font-size: 200%;
+    margin-top: -1%;
+}
