@@ -1,4 +1,4 @@
-import { Box, Divider, HStack, Spacer, Stack } from "@chakra-ui/react";
+import { Box, Divider, HStack, Spacer } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import Blog from "./Blog";
@@ -13,7 +13,6 @@ import Signup from "./Signup";
 const DesktopNav = () => {
   return (
     <Box
-      direction="row"
       display={{ base: "none", sm: "none", md: "center" }}
       style={{
         position: "fixed",
