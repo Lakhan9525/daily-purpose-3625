@@ -32,13 +32,13 @@ const List = ({ children }) => {
 export default function Footer() {
     return (
         <Box>
-            <Container as={Stack} maxW={'6xl'} py={10}>
+            <Container as={Stack} maxW={'6xl'} py={6} mt={'5rem'}>
                 <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 6 }} spacing={5}>
 
                     <Stack align={'center'} py={5}>
                         <ListHeader>Product</ListHeader>
 
-                        <Link color='white' href={'#'}><List>Features</List></Link>
+                        <Link color='white' href={'/feature'}><List>Features</List></Link>
                         <Link color='white' href={'#'}><List>Integrations</List></Link>
                         <Link color='white' href={'#'}><List>Applications</List></Link>
                         <Link color='white' href={'#'}><List>Product updates</List></Link>
