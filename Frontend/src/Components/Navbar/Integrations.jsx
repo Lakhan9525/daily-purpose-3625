@@ -2,14 +2,13 @@ import React from "react";
 import {
   Button,
   Heading,
-  List,
-  ListItem,
+  Menu,
+  MenuItem,
   Popover,
   PopoverArrow,
   PopoverBody,
   PopoverContent,
   PopoverTrigger,
-  Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
@@ -46,7 +45,7 @@ const Integrations = () => {
             {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
           </Button>
         </PopoverTrigger>
-        <PopoverContent width="230px">
+        <PopoverContent width="260px">
           <FocusLock returnFocus persistentFocus={false}>
             <PopoverArrow />
             <PopoverBody
@@ -54,51 +53,63 @@ const Integrations = () => {
               onMouseEnter={onOpen}
               onMouseLeave={onClose}
             >
-              <List>
-                <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                  <Icon8 />
-                  <Text as="b" fontSize="md" color="gray.45">
-                    Trello
-                  </Text>
-                </ListItem>
-                <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                  <Icon9 />
-                  <Text as="b" fontSize="md" color="gray.45">
-                    Google Calendar
-                  </Text>
-                </ListItem>
-                <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                  <Icon10 />
-                  <Text as="b" fontSize="md" color="gray.45">
-                    iCal
-                  </Text>
-                </ListItem>
-                <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                  <Icon11 />
-                  <Text as="b" fontSize="md" color="gray.45">
-                    Asana
-                  </Text>
-                </ListItem>
-                <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                  <Icon12 />
-                  <Text as="b" fontSize="md" color="gray.45">
-                    {" "}
-                    Monday.com
-                  </Text>
-                </ListItem>
-                <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                  <Icon13 />
-                  <Text as="b" fontSize="md" color="gray.45">
-                    Jira
-                  </Text>
-                </ListItem>
-                <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                  <Icon14 />
-                  <Text as="b" fontSize="md" color="gray.45">
-                    All Integrations
-                  </Text>
-                </ListItem>
-              </List>
+              <Menu>
+                <MenuItem
+                  icon={<Icon8 />}
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                >
+                  Trello
+                </MenuItem>
+
+                <MenuItem
+                  icon={<Icon9 />}
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                >
+                  Google Calendar
+                </MenuItem>
+
+                <MenuItem
+                  icon={<Icon10 />}
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                >
+                  iCal
+                </MenuItem>
+
+                <MenuItem
+                  icon={<Icon11 />}
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                >
+                  Asana
+                </MenuItem>
+
+                <MenuItem
+                  icon={<Icon12 />}
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                >
+                  Monday.com
+                </MenuItem>
+
+                <MenuItem
+                  icon={<Icon13 />}
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                >
+                  Jira
+                </MenuItem>
+
+                <MenuItem
+                  icon={<Icon14 />}
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                >
+                  All Integrations
+                </MenuItem>
+              </Menu>
             </PopoverBody>
           </FocusLock>
         </PopoverContent>

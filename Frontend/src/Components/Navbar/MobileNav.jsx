@@ -26,14 +26,6 @@ import TechStacks from "./TechStacks";
 const MobileNav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
-  const [showNavList, setShowNavList] = React.useState(false);
-  const toggleMobNavList = (id) => {
-    var element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView();
-    }
-    setShowNavList(!showNavList);
-  };
 
   return (
     <Stack
@@ -101,7 +93,7 @@ const MobileNav = () => {
                           href="#home"
                           onClick={() => toggleMobNavList("#home")}
                         >
-                          <Home />
+                          {/* <Home /> */}
                         </a>
                       </Box>
                       <Box mt="1rem" pb="1rem">
@@ -109,7 +101,7 @@ const MobileNav = () => {
                           href="#about"
                           onClick={() => toggleMobNavList("#about")}
                         >
-                          <AboutMe />
+                          {/* <AboutMe /> */}
                         </a>
                       </Box>
                       <Box mt="1rem" pb="1rem">
@@ -117,7 +109,7 @@ const MobileNav = () => {
                           href="#projects"
                           onClick={() => toggleMobNavList("#projects")}
                         >
-                          <Projects />
+                          {/* <Projects /> */}
                         </a>
                       </Box>
                       <Box mt="1rem" pb="1rem">
@@ -125,7 +117,7 @@ const MobileNav = () => {
                           href="#techstacks"
                           onClick={() => toggleMobNavList("#skills")}
                         >
-                          <TechStacks />
+                          {/* <TechStacks /> */}
                         </a>
                       </Box>
                       <Box mt="1rem" pb="1rem">
@@ -133,7 +125,7 @@ const MobileNav = () => {
                           href="#skills"
                           onClick={() => toggleMobNavList("#skills")}
                         >
-                          <Skills />
+                          {/* <Skills /> */}
                         </a>
                       </Box>
                       <Box mt="1rem" pb="1rem">
@@ -141,7 +133,7 @@ const MobileNav = () => {
                           href={require("../pdf/Suman_Khan_Resume.pdf")}
                           download
                         >
-                          <Resume width="5rem" colorScheme="facebook" />
+                          {/* <Resume width="5rem" colorScheme="facebook" /> */}
                         </a>
                       </Box>
                       <Box mt="1rem" pb="1rem">
@@ -149,7 +141,7 @@ const MobileNav = () => {
                           href="#contact"
                           onClick={() => toggleMobNavList("#contact")}
                         >
-                          <ContactMe />
+                          {/* <ContactMe /> */}
                         </a>
                       </Box>
                     </Box>

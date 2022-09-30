@@ -14,7 +14,7 @@ const AllRoutes = () => {
         <Route path="/BookDemo" element={<BookDemo />}></Route>
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

@@ -1,21 +1,14 @@
 import React from "react";
 import {
-  Box,
   Button,
-  ButtonGroup,
   Heading,
-  List,
-  ListItem,
   Menu,
-  MenuButton,
   MenuItem,
-  MenuList,
   Popover,
   PopoverArrow,
   PopoverBody,
   PopoverContent,
   PopoverTrigger,
-  Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
@@ -29,119 +22,99 @@ import Icon6 from "./Icons/Features_Icons/Icon6";
 import Icon7 from "./Icons/Features_Icons/Icon7";
 
 const Features = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    // <div>
-    <Menu>
-      <MenuButton
-        as={Button}
-        variant="ghost"
-        rightIcon={<ChevronDownIcon />}
-        _hover={{ bgColor: "none", color: "rgb(37,207,96)" }}
-        _expanded={{ bg: "none" }}
-        _focus={{ boxShadow: "none" }}
+    <div>
+      <Popover
+        isOpen={isOpen}
+        _focus={{ outline: "none" }}
+        returnFocusOnClose={false}
       >
-        Features
-      </MenuButton>
-      {/* <Menu> */}
-      <MenuList>
-        <MenuItem
-          borderRadius="6px"
-          _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
-          icon={<Icon1 />}
-        >
-          Automatic time tracking
-        </MenuItem>
+        <PopoverTrigger>
+          <Button
+            variant="ghost"
+            width="6rem"
+            borderRadius={5}
+            _hover={{ bg: "none", color: "rgb(37,207,96)" }}
+            onMouseEnter={onOpen}
+            onMouseLeave={onClose}
+          >
+            <Heading fontSize="md" color="gray.30">
+              Features
+            </Heading>{" "}
+            {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent width="260px">
+          <FocusLock returnFocus persistentFocus={false}>
+            <PopoverArrow />
+            <PopoverBody
+              textAlign="left"
+              onMouseEnter={onOpen}
+              onMouseLeave={onClose}
+            >
+              <Menu>
+                <MenuItem
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                  icon={<Icon1 />}
+                >
+                  Automatic time tracking
+                </MenuItem>
 
-        <MenuItem
-          borderRadius="6px"
-          _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
-          icon={<Icon2 />}
-        >
-          Reporting
-        </MenuItem>
-
-        <MenuItem
-          borderRadius="6px"
-          _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
-          icon={<Icon3 />}
-        >
-          Productivity tracking
-        </MenuItem>
-
-        <MenuItem
-          borderRadius="6px"
-          _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
-          icon={<Icon4 />}
-        >
-          Timesheet approvals
-        </MenuItem>
-
-        <MenuItem
-          borderRadius="6px"
-          _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
-          icon={<Icon5 />}
-        >
-          Invoicing
-        </MenuItem>
-
-        <MenuItem
-          borderRadius="6px"
-          _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
-          icon={<Icon6 />}
-        >
-          Billing rates & budgeting
-        </MenuItem>
-
-        <MenuItem
-          borderRadius="6px"
-          _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
-          icon={<Icon7 />}
-        >
-          Time off & attendance
-        </MenuItem>
-
-        {/* <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                <Icon2 />
-                <Text as="b" fontSize="md" color="gray.45">
+                <MenuItem
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                  icon={<Icon2 />}
+                >
                   Reporting
-                </Text>
-              </ListItem>
-              <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                <Icon3 />
-                <Text as="b" fontSize="md" color="gray.45">
-                  Productivity tracking
-                </Text>
-              </ListItem>
-              <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                <Icon4 />
-                <Text as="b" fontSize="md" color="gray.45">
-                  Timesheet approvals
-                </Text>
-              </ListItem>
-              <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                <Icon5 />
-                <Text as="b" fontSize="md" color="gray.45">
-                  {" "}
-                  Invoicing
-                </Text>
-              </ListItem>
-              <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                <Icon6 />
-                <Text as="b" fontSize="md" color="gray.45">
-                  Billing rates & budgeting
-                </Text>
-              </ListItem>
-              <ListItem _hover={{ color: "blue", cursor: "pointer" }}>
-                <Icon7 />
-                <Text as="b" fontSize="md" color="gray.45">
-                  Time off & attendance
-                </Text> */}
+                </MenuItem>
 
-        {/* </Menu> */}
-        {/* </PopoverBody> */}
-      </MenuList>
-    </Menu>
-    // </div>
+                <MenuItem
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                  icon={<Icon3 />}
+                >
+                  Productivity tracking
+                </MenuItem>
+
+                <MenuItem
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                  icon={<Icon4 />}
+                >
+                  Timesheet approvals
+                </MenuItem>
+
+                <MenuItem
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                  icon={<Icon5 />}
+                >
+                  Invoicing
+                </MenuItem>
+
+                <MenuItem
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                  icon={<Icon6 />}
+                >
+                  Billing rates & budgeting
+                </MenuItem>
+
+                <MenuItem
+                  borderRadius="6px"
+                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                  icon={<Icon7 />}
+                >
+                  Time off & attendance
+                </MenuItem>
+              </Menu>
+            </PopoverBody>
+          </FocusLock>
+        </PopoverContent>
+      </Popover>
+    </div>
   );
 };
 
