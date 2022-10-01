@@ -45,7 +45,7 @@ const Features = () => {
             {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
           </Button>
         </PopoverTrigger>
-        <PopoverContent width="260px">
+        <PopoverContent width="280px">
           <FocusLock returnFocus persistentFocus={false}>
             <PopoverArrow />
             <PopoverBody
