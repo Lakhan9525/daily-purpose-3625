@@ -30,7 +30,7 @@ const PricingPage = () => {
         }}
       /> */}
 
-      <Stack mt="4rem">
+      <Stack mt="6rem">
         <VStack>
           {/* Give Everyone A Voice */}
           <Heading

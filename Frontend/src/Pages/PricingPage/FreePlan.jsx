@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Divider,
   Heading,
   List,
   ListIcon,
@@ -23,37 +24,36 @@ const FreePlan = ({ display }) => {
             color="rgb(37,207,96)"
             as="h3"
             fontWeight="semibold"
-            fontSize="2xl"
+            fontSize="5xl"
+            textAlign="center"
           >
             Free
           </Heading>
         </Box>
 
         <Box mt="0.6rem">
-          <Text color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
-            For anyone trying out
-          </Text>
-          <Text color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
-            Mentimeter.
+          <Text
+            textAlign="center"
+            color="rgba(16, 24, 52, 0.75)"
+            fontWeight="semibold"
+          >
+            Free forever plan
           </Text>
         </Box>
 
+        <Box bgColor="rgb(37,207,96)" mt="1rem">
+          <Divider />
+        </Box>
+
         <Box mt="1.5rem">
-          <Heading
-            fontWeight="semibold"
-            fontFamily="body"
-            fontSize="5xl"
-            color="rgb(16,24,52)"
-          >
-            $0
-          </Heading>
           <Text
             mt="0.5rem"
             color="rgba(16, 24, 52, 0.75)"
             fontSize="sm"
             fontWeight="semibold"
           >
-            No credit card needed
+            <Text>Measure on which activities you</Text>
+            <Text>spend time while working</Text>
           </Text>
         </Box>
 
@@ -62,14 +62,14 @@ const FreePlan = ({ display }) => {
             mt="2.5rem"
             width="13rem"
             height="3rem"
-            backgroundColor="rgb(219,220,225)"
-            _hover={{ backgroundColor: "gray" }}
+            backgroundColor="rgb(37,207,96)"
+            _hover={{ backgroundColor: "green.600" }}
             onClick={() => {
               navigate(`/signup?referral=${display}`);
             }}
           >
-            <Text fontFamily="sans-serif" fontWeight="bold">
-              Get Started
+            <Text color="white" fontFamily="sans-serif" fontWeight="bold">
+              Join for free
             </Text>
           </Button>
         </Box>
@@ -78,19 +78,15 @@ const FreePlan = ({ display }) => {
           <List textAlign="left">
             <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
               <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
-              Unlimited audience
+              Unlimited users
             </ListItem>
             <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
               <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
-              Unlimited presentations
+              Unlimited Projects & tasks
             </ListItem>
             <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
               <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
-              Up to 2 question slides
-            </ListItem>
-            <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
-              <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
-              Up to 5 quiz slides
+              Desktop & Mobile app
             </ListItem>
           </List>
         </Box>
