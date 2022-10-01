@@ -39,17 +39,14 @@ const ProPlan = () => {
           </Box>
         </HStack>
 
-        <Box mt="1.5rem">
+        <Box mt="-1rem">
           <Heading
             fontWeight="semibold"
             fontFamily="body"
-            fontSize="5xl"
+            fontSize="3xl"
             color="rgb(16,24,52)"
           >
-            $24
-            <Text as="sup" fontSize="1.8rem">
-              99<Text as="sub">/month</Text>
-            </Text>
+            $9
           </Heading>
           <Text
             mt="0.5rem"

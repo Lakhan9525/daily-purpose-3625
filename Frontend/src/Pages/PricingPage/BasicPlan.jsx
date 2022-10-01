@@ -69,10 +69,10 @@ const BasicPlan = () => {
             mt="1rem"
             width="13rem"
             height="3rem"
-            backgroundColor="rgb(219,220,225)"
-            _hover={{ backgroundColor: "gray" }}
+            backgroundColor="rgb(37,207,96)"
+            _hover={{ backgroundColor: "green.600" }}
           >
-            <Text fontFamily="sans-serif" fontWeight="bold">
+            <Text color="white" fontFamily="sans-serif" fontWeight="bold">
               start your free trial
             </Text>
           </Button>

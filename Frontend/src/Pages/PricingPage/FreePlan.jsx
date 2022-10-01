@@ -19,7 +19,7 @@ const FreePlan = ({ display }) => {
   return (
     <VStack>
       <List textAlign="left">
-        <Box>
+        <Box mt="-2rem">
           <Heading
             color="rgb(37,207,96)"
             as="h3"
@@ -31,7 +31,7 @@ const FreePlan = ({ display }) => {
           </Heading>
         </Box>
 
-        <Box mt="0.6rem">
+        <Box mt="0.3rem">
           <Text
             textAlign="center"
             color="rgba(16, 24, 52, 0.75)"
@@ -45,9 +45,8 @@ const FreePlan = ({ display }) => {
           <Divider />
         </Box>
 
-        <Box mt="1.5rem">
+        <Box mt="1.4rem">
           <Text
-            mt="0.5rem"
             color="rgba(16, 24, 52, 0.75)"
             fontSize="sm"
             fontWeight="semibold"
@@ -59,7 +58,7 @@ const FreePlan = ({ display }) => {
 
         <Box>
           <Button
-            mt="2.5rem"
+            mt="1.3rem"
             width="13rem"
             height="3rem"
             backgroundColor="rgb(37,207,96)"
