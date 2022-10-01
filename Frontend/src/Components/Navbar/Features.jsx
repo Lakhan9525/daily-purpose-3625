@@ -87,7 +87,7 @@ const Features = () => {
                 </MenuItem>
 
                 <MenuItem
-                  borderRadius="6px"
+                  borderRadius="6px"      
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                   icon={<Icon5 />}
                 >
