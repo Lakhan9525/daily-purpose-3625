@@ -15,7 +15,10 @@ const DemoSection = () => {
       <Box mt='15' alignItems='left'>
         <Heading as="h1" size="2xl" noOfLines={2} >
           Book a 1:1 TimeCamp presentation
-          {/* <Image src="https://cdn-m.timecamp.com/img/landing-page/arrow-tc.svg"  alt=""  /> */}
+          {/* <Image
+            src="https://cdn-m.timecamp.com/img/landing-page/arrow-tc.svg"
+            alt=""
+          /> */}
         </Heading>
       </Box>
       <Heading as="h4" size="lg">

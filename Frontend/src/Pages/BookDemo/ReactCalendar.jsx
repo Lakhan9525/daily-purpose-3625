@@ -10,6 +10,7 @@ const ReactCalendar = () => {
 
   return (
     <div className="calendar_div">
+      {/* <Box mt='15' borderRadius='md' borderWidth='1px' maxW='md' overflow='hidden' alignItems='center'> */}
         <div className="head">
           Select A Day
         </div>
@@ -22,7 +23,8 @@ const ReactCalendar = () => {
         </Box>
         <Box mb='2'>
            <ReactTimeZone />
-        </Box>     
+        </Box>
+      {/* </Box> */}
     </div>
   );
 };
