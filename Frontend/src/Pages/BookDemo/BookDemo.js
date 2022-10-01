@@ -18,12 +18,12 @@ const BookDemo = () => {
           </Box>
         </SimpleGrid>
       </div>
-      <Box className="middle">
+      <div className="middleSection">
         <MidddleBackground />
-      </Box>
-      <Box className="bottom">
+      </div>
+      <div className="bottom">
         <BottomSection />
-      </Box>
+      </div>
     </div>
   );
 };
