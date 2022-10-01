@@ -11,7 +11,7 @@ import {
 import React from "react";
 import { AiFillDashboard, AiOutlineRight } from "react-icons/ai";
 import { BiCustomize } from "react-icons/bi";
-import { BsCurrencyDollar } from "react-icons/bs";
+// import { BsCurrencyDollar } from "react-icons/bs";
 import { CgBox } from "react-icons/cg";
 import { FaRegCalendarAlt, FaSearchPlus } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";

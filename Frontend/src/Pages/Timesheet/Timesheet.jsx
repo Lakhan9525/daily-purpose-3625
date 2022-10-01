@@ -1,10 +1,12 @@
 import React from 'react'
-import Sidebar from './Sidebar'
+import Timesheetcalender from './Timesheetcalender'
+import TimesheetNavbar from './Timesheetnavbar'
 
 const Timesheet = () => {
   return (
     <>
-    <Sidebar/>
+    <TimesheetNavbar/>
+ <Timesheetcalender/>
     </>
   )
 }

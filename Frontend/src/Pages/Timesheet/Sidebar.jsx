@@ -4,16 +4,16 @@ import { useState } from "react";
 import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
-import { AiFillDashboard } from "react-icons/ai";
+// import { AiFillDashboard } from "react-icons/ai";
 import { TbChartPie } from "react-icons/tb";
-import { GrPersonalComputer } from "react-icons/gr";
+// import { GrPersonalComputer } from "react-icons/gr";
 import { BsFolder2Open } from "react-icons/bs";
 import { BsTags } from "react-icons/bs";
 import { FiUsers } from "react-icons/fi";
 import { BsBagDash } from "react-icons/bs";
 import { TbFileInvoice } from "react-icons/tb";
-import { AiOutlineCheckSquare } from "react-icons/ai";
-import { useRef } from "react";
+// import { AiOutlineCheckSquare } from "react-icons/ai";
+// import { useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Reports from "./Reports";
 
@@ -79,7 +79,7 @@ const Sidebar = () => {
 
       {/* Time sheet */}
 
-      <Link to="/homepage/timesheet">
+      <Link to="/timesheet">
         <Box
           height={"auto"}
           width="100%"
@@ -172,11 +172,11 @@ const Sidebar = () => {
           MANAGE
         </Text>
 
-        <Link to="/homepage/projects">
+        {/* <Link to="/projects"> */}
           <Flex
             width={"70%"}
             mt="2"
-            onClick={() => navigate("/projects")}
+            // onClick={() => navigate("/projects")}
             justifyContent="center"
             _hover={{
               cursor: "pointer",
@@ -194,13 +194,13 @@ const Sidebar = () => {
               </Text>
             )}
           </Flex>
-        </Link>
+        {/* </Link> */}
 
-        <Link to="/homepage/tags">
+        {/* <Link to="/tags"> */}
           <Flex
             width={"60%"}
             justifyContent="center"
-            onClick={() => navigate("/tags")}
+            // onClick={() => navigate("/tags")}
             mt="2"
             _hover={{
               cursor: "pointer",
@@ -218,7 +218,7 @@ const Sidebar = () => {
               </Text>
             )}
           </Flex>
-        </Link>
+        {/* </Link> */}
       </Box>
 
       {/* TEAM */}
@@ -233,7 +233,7 @@ const Sidebar = () => {
         >
           TEAM
         </Text>
-        <Link to="/homepage/user">
+        {/* <Link to="/user"> */}
           <Flex
             width={"70%"}
             mt="2"
@@ -254,7 +254,7 @@ const Sidebar = () => {
               </Text>
             )}
           </Flex>
-        </Link>
+        {/* </Link> */}
       </Box>
 
        {/* Clients */}
@@ -276,11 +276,11 @@ const Sidebar = () => {
         CLIENTS
         </Text>
 
-        <Link to="/homepage/client">
+        {/* <Link to="/client"> */}
           <Flex
             width={"70%"}
             mt="2"
-            onClick={() => navigate("/client")}
+            // onClick={() => navigate("/client")}
             justifyContent="center"
             _hover={{
               cursor: "pointer",
@@ -298,13 +298,13 @@ const Sidebar = () => {
               </Text>
             )}
           </Flex>
-        </Link>
+        {/* </Link> */}
 
-        <Link to="/homepage/invoice">
+        {/* <Link to="invoice"> */}
           <Flex
             width={"60%"}
             justifyContent="center"
-            onClick={() => navigate("/invoice")}
+            // onClick={() => navigate("/invoice")}
             mt="2"
             _hover={{
               cursor: "pointer",
@@ -322,7 +322,7 @@ const Sidebar = () => {
               </Text>
             )}
           </Flex>
-        </Link>
+        {/* </Link> */}
       </Box>
 
     </Box>
