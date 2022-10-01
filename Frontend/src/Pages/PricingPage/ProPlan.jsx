@@ -39,40 +39,6 @@ const ProPlan = () => {
           </Box>
         </HStack>
 
-        <Box mt="0.6rem">
-          <Text color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
-            Full access to all features for
-          </Text>
-          <Text
-            color="rgba(16, 24, 52, 0.75)"
-            fontWeight="semibold"
-            display="flex"
-            gap="0.2rem"
-          >
-            individuals or{" "}
-            <Tooltip
-              width="13rem"
-              height="7.6rem"
-              hasArrow
-              placement="top"
-              label="Organize your presenters into a common workspace with shared presentation templates and centralized billing. Price per presenter"
-              bg="blackAlpha.900"
-              color="white"
-              textAlign="match-parent"
-              pt="0.5rem"
-              pl="1rem"
-            >
-              <Text
-                textDecorationLine="underline"
-                cursor="help"
-                fontWeight="bold"
-              >
-                teams.
-              </Text>
-            </Tooltip>
-          </Text>
-        </Box>
-
         <Box mt="1.5rem">
           <Heading
             fontWeight="semibold"

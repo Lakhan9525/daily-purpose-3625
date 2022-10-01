@@ -65,7 +65,7 @@ const FreePlan = ({ display }) => {
             backgroundColor="rgb(37,207,96)"
             _hover={{ backgroundColor: "green.600" }}
             onClick={() => {
-              navigate(`/signup?referral=${display}`);
+              navigate(`/auth/register/free`);
             }}
           >
             <Text color="white" fontFamily="sans-serif" fontWeight="bold">

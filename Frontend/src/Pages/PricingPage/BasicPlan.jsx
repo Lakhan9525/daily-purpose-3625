@@ -19,7 +19,7 @@ const BasicPlan = () => {
     // <Stack>
     <VStack>
       <List textAlign="left">
-        <Box>
+        <Box mt="4rem">
           <Heading
             color="rgb(37,207,96)"
             as="h3"
@@ -31,7 +31,7 @@ const BasicPlan = () => {
           </Heading>
         </Box>
 
-        <Box mt="0.1rem">
+        <Box mt="1rem">
           <Heading
             fontWeight="semibold"
             fontFamily="body"
@@ -41,7 +41,7 @@ const BasicPlan = () => {
           >
             $6.3
           </Heading>
-          <Box mt="0.6rem">
+          <Box mt="1rem">
             <Text
               textAlign="center"
               color="rgba(16, 24, 52, 0.75)"
@@ -54,7 +54,7 @@ const BasicPlan = () => {
             <Divider />
           </Box>
           <Text
-            mt="1.2rem"
+            mt="1.5rem"
             color="rgba(16, 24, 52, 0.75)"
             fontSize="sm"
             fontWeight="semibold"
@@ -73,27 +73,44 @@ const BasicPlan = () => {
             _hover={{ backgroundColor: "gray" }}
           >
             <Text fontFamily="sans-serif" fontWeight="bold">
-              Buy Basic
+              start your free trial
             </Text>
           </Button>
         </Box>
 
         <Box mt="1rem">
           <List textAlign="left">
-            <ListItem color="rgb(16,24,52)" fontWeight="semibold">
-              All Free features, plus
+            <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
+              <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
+              Time rounding
             </ListItem>
             <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
               <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
-              Unlimited questions
+              Custom report
             </ListItem>
             <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
               <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
-              Import presentations
+              Hide time from users
             </ListItem>
             <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
               <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
-              Export results to Excel
+              Management roles
+            </ListItem>
+            <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
+              <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
+              Team productivity tracking
+            </ListItem>
+            <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
+              <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
+              XLS reports export
+            </ListItem>
+            <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
+              <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
+              Unlimited integrationss
+            </ListItem>
+            <ListItem color="rgba(16, 24, 52, 0.75)" fontWeight="semibold">
+              <ListIcon as={BsCheck2} color="rgb(87,93,113)" />
+              Billable time & budgeting
             </ListItem>
           </List>
         </Box>
