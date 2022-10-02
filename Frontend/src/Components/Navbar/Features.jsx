@@ -27,8 +27,9 @@ const Features = () => {
     <div>
       <Popover
         isOpen={isOpen}
-        _focus={{ outline: "none" }}
         returnFocusOnClose={false}
+        boundary={false}
+        style={{ outline: "none", border: "none" }}
       >
         <PopoverTrigger>
           <Button
@@ -45,7 +46,10 @@ const Features = () => {
             {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
           </Button>
         </PopoverTrigger>
-        <PopoverContent width="280px">
+        <PopoverContent
+          width="280px"
+          style={{ outline: "none", border: "none" }}
+        >
           <FocusLock returnFocus persistentFocus={false}>
             <PopoverArrow />
             <PopoverBody
@@ -56,6 +60,8 @@ const Features = () => {
               <Menu>
                 <MenuItem
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                   icon={<Icon1 />}
                 >
@@ -64,6 +70,8 @@ const Features = () => {
 
                 <MenuItem
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                   icon={<Icon2 />}
                 >
@@ -72,6 +80,8 @@ const Features = () => {
 
                 <MenuItem
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                   icon={<Icon3 />}
                 >
@@ -80,6 +90,8 @@ const Features = () => {
 
                 <MenuItem
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                   icon={<Icon4 />}
                 >
@@ -88,6 +100,8 @@ const Features = () => {
 
                 <MenuItem
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                   icon={<Icon5 />}
                 >
@@ -96,6 +110,8 @@ const Features = () => {
 
                 <MenuItem
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                   icon={<Icon6 />}
                 >
@@ -104,6 +120,8 @@ const Features = () => {
 
                 <MenuItem
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                   icon={<Icon7 />}
                 >
