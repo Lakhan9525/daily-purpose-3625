@@ -15,7 +15,6 @@ import HomePage from "./HomePage/HomePage";
 const AllRoutes = () => {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/auth/register" element={<Signup />} />
@@ -26,7 +25,6 @@ const AllRoutes = () => {
         <Route path="/timesheet" element={<Timesheet />}></Route>
         <Route path="/integration" element={<Finalinte />}></Route>
       </Routes>
-      <Footer />
     </>
   );
 };
