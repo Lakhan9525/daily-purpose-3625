@@ -1,102 +1,114 @@
-import React, { useEffect, useRef, useState } from 'react';
-import {useNavigate} from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Box, Button, Image, Input, Text } from "@chakra-ui/react";
 import { FcGoogle } from "react-icons/fc";
-import axios from 'axios';
-import styles from './Signup.module.css';
+import axios from "axios";
+import styles from "./Signup.module.css";
+import SignUpNav from "./SignUpNav";
+import GoogleAndFacebookBtn from "../Signin/GoogleAndFacebookBtn";
 
 const Signup = () => {
-    const emailref = useRef();
-    const passwordref = useRef();
-    const phoneref = useRef();
-    const [flag, setFlag] = useState("");
-    const [signupflag, setSignupflag] = useState(true);
-    const [emailflag, setEmailflag] = useState(true);
-    const [passwordflag, setPasswordflag] = useState(true);
-    const [emptyflag, setEmptyflag] = useState(true);
-    const navigate = useNavigate();
-    const validator = async () => {
-      let end = "";
-      for (let i = emailref.current.value.length - 10; i < emailref.current.value.length; i++) {
-        end = end + emailref.current.value[i];
-      }
-      if (end === "@gmail.com") {
-        setEmailflag(true);
-      } else {
-        setEmailflag(false);
-      }
-      let password = passwordref.current.value;
-      let length = password.length;
-      let isnumber = false;
-      for (let i = 0; i < length; i++) {
-        if (
-          password[i] === 0 ||
-          password[i] === 1 ||
-          password[i] === 2 ||
-          password[i] === 3 ||
-          password[i] === 4 ||
-          password[i] === 5 ||
-          password[i] === 6 ||
-          password[i] === 7 ||
-          password[i] === 8 ||
-          password[i] === 9
-        ) {
-          isnumber = true;
-          break;
-        }
-      }
-      let specialcharacter = false;
+  const emailref = useRef();
+  const passwordref = useRef();
+  const phoneref = useRef();
+  const [flag, setFlag] = useState("");
+  const [signupflag, setSignupflag] = useState(true);
+  const [emailflag, setEmailflag] = useState(true);
+  const [passwordflag, setPasswordflag] = useState(true);
+  const [emptyflag, setEmptyflag] = useState(true);
+  const navigate = useNavigate();
+  const validator = async () => {
+    let end = "";
+    for (
+      let i = emailref.current.value.length - 10;
+      i < emailref.current.value.length;
+      i++
+    ) {
+      end = end + emailref.current.value[i];
+    }
+    if (end === "@gmail.com") {
+      setEmailflag(true);
+    } else {
+      setEmailflag(false);
+    }
+    let password = passwordref.current.value;
+    let length = password.length;
+    let isnumber = false;
+    for (let i = 0; i < length; i++) {
       if (
-        password.includes("@") ||
-        password.includes("#") ||
-        password.includes("$") ||
-        password.includes("%") ||
-        password.includes("&") ||
-        password.includes("*")
+        password[i] === 0 ||
+        password[i] === 1 ||
+        password[i] === 2 ||
+        password[i] === 3 ||
+        password[i] === 4 ||
+        password[i] === 5 ||
+        password[i] === 6 ||
+        password[i] === 7 ||
+        password[i] === 8 ||
+        password[i] === 9
       ) {
-        specialcharacter = true;
-      }
-      if (isnumber && length > 8 && specialcharacter) {
-        setPasswordflag(true)
-      } else {
-        setPasswordflag(false);
-      }
-      if (emailref.current.value.length > 0 && passwordref.current.value.length > 0) {
-        setEmptyflag(true);
-        await handlesubmit();
-      }else{
-        setEmptyflag(false);
+        isnumber = true;
+        break;
       }
     }
-    const handlesubmit =  async() => {
-        let usercreds = {
-          "email": emailref.current.value,
-          "password": passwordref.current.value,
-          "phone": phoneref.current.value,
-        };
-        let result;
-       await axios({
-          method: "post",
-          url: "https://pure-fjord-44762.herokuapp.com/user/register",
-          data: usercreds,
-        }).then((res) => (setFlag(res.data),result=res.data));
-        if (result !== "Signup Successfull") {
-          setSignupflag(false);
-        }
-        
+    let specialcharacter = false;
+    if (
+      password.includes("@") ||
+      password.includes("#") ||
+      password.includes("$") ||
+      password.includes("%") ||
+      password.includes("&") ||
+      password.includes("*")
+    ) {
+      specialcharacter = true;
     }
-    useEffect(() => {
-      if (flag === "Signup Successfull") {
-        navigate("/loginpage", { replace: true });
-      }
-    }, [flag]);
-    const handlegoogleauth = () => {
-      localStorage.setItem("google",true);
-    
+    if (isnumber && length > 8 && specialcharacter) {
+      setPasswordflag(true);
+    } else {
+      setPasswordflag(false);
+    }
+    if (
+      emailref.current.value.length > 0 &&
+      passwordref.current.value.length > 0
+    ) {
+      setEmptyflag(true);
+      await handlesubmit();
+    } else {
+      setEmptyflag(false);
+    }
+  };
+  const handlesubmit = async () => {
+    let usercreds = {
+      email: emailref.current.value,
+      password: passwordref.current.value,
+      phone: phoneref.current.value,
     };
+    let result;
+    await axios({
+      method: "post",
+      url: "https://pure-fjord-44762.herokuapp.com/user/register",
+      data: usercreds,
+    }).then((res) => (setFlag(res.data), (result = res.data)));
+    if (result !== "Signup Successfull") {
+      setSignupflag(false);
+    }
+  };
+  useEffect(() => {
+    if (flag === "Signup Successfull") {
+      navigate("/loginpage", { replace: true });
+    }
+  }, [flag]);
+
+  const handleGoogleAuth = () => {
+    window.open("http://localhost:8080/auth/google", "_self");
+  };
+  const handleFacebookAuth = () => {
+    window.open("http://localhost:8080/auth/facebook", "_self");
+  };
+
   return (
-    <div style={{ paddingBottom: "20px" }}>
-      
+    <div style={{ paddingBottom: "20px", marginTop: "8rem" }}>
+      <SignUpNav />
       <Box className={styles.signupdiv}>
         <Text className={styles.heading}>Start tracking time</Text>
         <Text className={styles.subheading}>
@@ -105,16 +117,10 @@ const Signup = () => {
         <Text className={styles.subsubheading}>
           All features. No credit card required
         </Text>
-        <Box
-          className={styles.googlebtn}
-          _hover={{ backgroundColor: "gray.100" }}
-          onClick={() => handlegoogleauth()}
-        >
-          <FcGoogle className={styles.googlelogo} />
-          <Text className={styles.googletext} color="#8f7e77">
-            Sign up with Google
-          </Text>
-        </Box>
+        <GoogleAndFacebookBtn
+          handleGoogleAuth={handleGoogleAuth}
+          handleFacebookAuth={handleFacebookAuth}
+        />
         <Text marginTop="20px" fontSize="14px">
           Or
         </Text>
@@ -203,7 +209,7 @@ const Signup = () => {
         </Text>
       </Box>
     </div>
-  )
-}
+  );
+};
 
-export default Signup
+export default Signup;

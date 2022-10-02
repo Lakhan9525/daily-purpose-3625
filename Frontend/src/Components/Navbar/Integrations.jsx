@@ -20,6 +20,7 @@ import Icon11 from "./Icons/Integrations_Icons/Icon11";
 import Icon12 from "./Icons/Integrations_Icons/Icon12";
 import Icon13 from "./Icons/Integrations_Icons/Icon13";
 import Icon14 from "./Icons/Integrations_Icons/Icon14";
+import { Link } from "react-router-dom";
 
 const Integrations = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -115,15 +116,17 @@ const Integrations = () => {
                   Jira
                 </MenuItem>
 
-                <MenuItem
-                  icon={<Icon14 />}
-                  borderRadius="6px"
-                  maxH="50px"
-                  pt="50px"
-                  _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
-                >
-                  All Integrations
-                </MenuItem>
+                <Link to="/integration">
+                  <MenuItem
+                    icon={<Icon14 />}
+                    borderRadius="6px"
+                    maxH="50px"
+                    pt="50px"
+                    _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
+                  >
+                    All Integrations
+                  </MenuItem>
+                </Link>
               </Menu>
             </PopoverBody>
           </FocusLock>

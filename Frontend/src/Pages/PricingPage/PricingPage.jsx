@@ -14,22 +14,14 @@ import FreePlan from "./FreePlan";
 import BasicPlan from "./BasicPlan";
 import ProPlan from "./ProPlan";
 import EnterprisePlan from "./EnterprisePlan";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const PricingPage = () => {
   const text = "plans";
 
   return (
     <div>
-      {/* <Navbar
-        display={text}
-        style={{
-          position: "sticky",
-          top: 0,
-          backgroundColor: "rgb(255,255,255",
-          zIndex: 1,
-        }}
-      /> */}
-
       <Stack mt="6rem">
         <VStack>
           {/* Give Everyone A Voice */}

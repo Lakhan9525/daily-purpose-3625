@@ -88,7 +88,7 @@ const DesktopNav = () => {
                 <Divider orientation="vertical" />
               </Box>
               <Box mt="0.4rem">
-                <Signin />
+                <Signin name="Sign in" />
               </Box>
               <Spacer />
               <Box>
