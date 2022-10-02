@@ -27,8 +27,9 @@ const Integrations = () => {
     <div>
       <Popover
         isOpen={isOpen}
-        _focus={{ outline: "none" }}
         returnFocusOnClose={false}
+        boundary={false}
+        style={{ _focus: { outline: "none" } }}
       >
         <PopoverTrigger>
           <Button
@@ -57,6 +58,8 @@ const Integrations = () => {
                 <MenuItem
                   icon={<Icon8 />}
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                 >
                   Trello
@@ -65,6 +68,8 @@ const Integrations = () => {
                 <MenuItem
                   icon={<Icon9 />}
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                 >
                   Google Calendar
@@ -73,6 +78,8 @@ const Integrations = () => {
                 <MenuItem
                   icon={<Icon10 />}
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                 >
                   iCal
@@ -81,6 +88,8 @@ const Integrations = () => {
                 <MenuItem
                   icon={<Icon11 />}
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                 >
                   Asana
@@ -89,6 +98,8 @@ const Integrations = () => {
                 <MenuItem
                   icon={<Icon12 />}
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                 >
                   Monday.com
@@ -97,6 +108,8 @@ const Integrations = () => {
                 <MenuItem
                   icon={<Icon13 />}
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                 >
                   Jira
@@ -105,6 +118,8 @@ const Integrations = () => {
                 <MenuItem
                   icon={<Icon14 />}
                   borderRadius="6px"
+                  maxH="50px"
+                  pt="50px"
                   _hover={{ bgColor: "rgb(37,207,96)", color: "white" }}
                 >
                   All Integrations
