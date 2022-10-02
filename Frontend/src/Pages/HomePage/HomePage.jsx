@@ -10,10 +10,16 @@ import {
   Button,
 } from "@chakra-ui/react";
 import Styles from "../HomePage/homepage.module.css";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
+import Faq from "../Faq/Faq";
+import PricingPage from "../PricingPage/PricingPage";
+import BlogHome from "../BlogHome/BlogHome";
 
 const HomePage = () => {
   return (
     <div>
+      <Navbar />
       <Box className={Styles.background}>
         <Flex
           className={Styles.row}
@@ -144,6 +150,10 @@ const HomePage = () => {
           </Box>
         </Flex>
       </Box>
+      <PricingPage />
+      <Faq />
+      <BlogHome />
+      <Footer />
     </div>
   );
 };

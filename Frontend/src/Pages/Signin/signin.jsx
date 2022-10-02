@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Box, Image, Button, Input, Text } from "@chakra-ui/react";
+import { Box, Image, Input, Text } from "@chakra-ui/react";
 import styles from "./signin.module.css";
 import { FiChrome } from "react-icons/fi";
 import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
 import { Link, useNavigate } from "react-router-dom";
+import SigninNav from "./SigninNav";
+import GoogleAndFacebookBtn from "./GoogleAndFacebookBtn";
 
 const Signin = () => {
   const emailref = useRef();
@@ -24,22 +26,9 @@ const Signin = () => {
     window.open("http://localhost:8080/auth/facebook", "_self");
   };
   return (
-    <Box>
+    <Box mt="8rem">
       {/* Navbar section */}
-      <Box
-        display="flex"
-        alignItems="center"
-        h="80px"
-        boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 6px"
-      >
-        <Image
-          w="140px"
-          h="40px"
-          marginLeft="8%"
-          src="https://cdn.timecamp.com/res/css/images/greenbranding/TC-logo.1661423136.svg"
-          alt="timecamp-logo"
-        />
-      </Box>
+      <SigninNav />
       <Box display="flex" m="3rem" gap="2rem">
         {/* Left-Div */}
         <Box className={styles.leftdiv}>
@@ -95,29 +84,10 @@ const Signin = () => {
         <Box className={styles.rightdiv}>
           {/* Form heading */}
           <Text className={styles.loginheading}>Log in to TimeCamp</Text>
-          {/* Facebook login button */}
-          <Box
-            className={styles.facebookbutton}
-            color="#fff"
-            backgroundColor="#172b4d"
-            onClick={handleFacebookAuth}
-          >
-            <SiFacebook fontSize="25px" />
-            <Text fontSize="14px" fontWeight="700">
-              Log in with Facebook
-            </Text>
-          </Box>
-          {/* Google login button */}
-          <Box
-            className={styles.googlebutton}
-            _hover={{ backgroundColor: "gray.100" }}
-            onClick={handleGoogleAuth}
-          >
-            <FcGoogle fontSize="25px" />
-            <Text fontSize="14px" fontWeight="700" color="#8f7e77">
-              Log in with Google
-            </Text>
-          </Box>
+          <GoogleAndFacebookBtn
+            handleFacebookAuth={handleFacebookAuth}
+            handleGoogleAuth={handleGoogleAuth}
+          />
           <Text marginTop="1rem" fontSize="14px">
             Or
           </Text>
