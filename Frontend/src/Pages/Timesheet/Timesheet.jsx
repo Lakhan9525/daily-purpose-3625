@@ -1,15 +1,19 @@
-import { Box } from "@chakra-ui/react";
-import React from "react";
-import MainContent from "../../Components/TimesheetComps/MainContent";
-import Sidebar from "./Sidebar";
+import React from 'react'
+import MainContent from '../../Components/TimesheetComps/MainContent'
+
+import Timesheetcalender from './Timesheetcalender'
+import TimesheetNavbar from './Timesheetnavbar'
+
 
 const Timesheet = () => {
   return (
-    <Box style={{ width: "100vw", display: "flex" }}>
-      <Sidebar />
-      <MainContent />
-    </Box>
-  );
-};
+    <>
+      <TimesheetNavbar />
+      <Timesheetcalender />
+      <MainContent/>
 
-export default Timesheet;
+    </>
+  )
+}
+
+export default Timesheet

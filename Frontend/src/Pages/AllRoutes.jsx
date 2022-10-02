@@ -9,6 +9,7 @@ import Finalinte from "./Integration/Finalinte";
 import HomePage from "./HomePage/HomePage";
 import BookDemo from "./BookDemo/BookDemo";
 import FinalPricing from "./PricingPage/FinalPricing";
+import Project from "./Timesheet/Project/Project";
 
 const AllRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AllRoutes = () => {
         <Route path="/auth/login" element={<Signin />}></Route>
         <Route path="/timesheet" element={<Timesheet />}></Route>
         <Route path="/integration" element={<Finalinte />}></Route>
+        <Route path="/project" element={<Project />}></Route>
       </Routes>
     </>
   );

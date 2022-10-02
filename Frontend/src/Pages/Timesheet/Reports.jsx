@@ -11,7 +11,7 @@ import {
 import React from "react";
 import { AiFillDashboard, AiOutlineRight } from "react-icons/ai";
 import { BiCustomize } from "react-icons/bi";
-import { BsCurrencyDollar } from "react-icons/bs";
+
 import { CgBox } from "react-icons/cg";
 import { FaRegCalendarAlt, FaSearchPlus } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
@@ -19,15 +19,14 @@ import { GoGraph } from "react-icons/go";
 import { IoReorderThreeOutline } from "react-icons/io5";
 import { TbChartPie } from "react-icons/tb";
 
+
 const Reports = ({ toggle }) => {
   return (
     <>
       <Box>
         <Popover trigger={"hover"} placement={"right"}>
           <PopoverTrigger>
-            {/* <Link color={"gray.500"} _hover={{color:"#25cf60" }}>
-                        <Text>Reports</Text>
-                      </Link> */}
+           
             <Box
               m={"auto"}
               width={"275px"}
@@ -233,6 +232,7 @@ const Reports = ({ toggle }) => {
                     Estimates
                   </Text>
                 </Flex>
+
               </VStack>
               <Text fontSize={"13px"} fontWeight="semibold" color={"gray.400"}>
                 BUDGETING REPORTS
