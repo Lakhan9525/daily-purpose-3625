@@ -3,7 +3,7 @@ import axios from "axios";
 
 const getProject = () => (dispatch) => {
     dispatch({type:types.GET_PROJECT_REQUEST})
-    axios.get("https://pure-fjord-44762.herokuapp.com/project/",{
+    axios.get("http://localhost:8080/project/",{
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}` //the token is a variable which holds the token
         }
@@ -20,7 +20,7 @@ const getProject = () => (dispatch) => {
 const createProject = (payload) => (dispatch) => {
     dispatch({type:types.ADD_PROJECT_REQUEST})
 
-    return axios.post('https://pure-fjord-44762.herokuapp.com/project/create',{...payload},{
+    return axios.post('http://localhost:8080/project/create',{...payload},{
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}` //the token is a variable which holds the token
         }
@@ -36,7 +36,7 @@ const createProject = (payload) => (dispatch) => {
 const updateProject = (payload,id) => (dispatch) => {
     dispatch({type:types.UPDATE_PROJECT_REQUEST})
 
-    return axios.patch(`https://pure-fjord-44762.herokuapp.com/project/${id}/edit`,{...payload},{
+    return axios.patch(`http://localhost:8080/project/${id}/edit`,{...payload},{
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}` //the token is a variable which holds the token
         }
@@ -53,7 +53,7 @@ const updateProject = (payload,id) => (dispatch) => {
 const deleteProject = (id) => (dispatch) => {
     dispatch({type:types.DELETE_PROJECT_REQUEST})
 
-   return axios.delete(`https://pure-fjord-44762.herokuapp.com/project/${id}/delete`,{
+   return axios.delete(`http://localhost:8080/project/${id}/delete`,{
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}` //the token is a variable which holds the token
         }
