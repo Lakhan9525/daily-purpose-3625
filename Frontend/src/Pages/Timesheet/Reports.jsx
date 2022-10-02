@@ -19,7 +19,6 @@ import { GoGraph } from "react-icons/go";
 import { IoReorderThreeOutline } from "react-icons/io5";
 import { TbChartPie } from "react-icons/tb";
 
-
 const Reports = ({ toggle }) => {
   return (
     <>
@@ -234,7 +233,6 @@ const Reports = ({ toggle }) => {
                     Estimates
                   </Text>
                 </Flex>
-
               </VStack>
               <Text fontSize={"13px"} fontWeight="semibold" color={"gray.400"}>
                 BUDGETING REPORTS
