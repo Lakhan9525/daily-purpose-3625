@@ -36,32 +36,32 @@ HTML5, CSS3, React.js, Chakra-UI, Node.js, Express, MongoDB, React-router-dom, G
 
 - **Landing Page Image**
 
-![Landing Page ](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Landing%20Page.png?raw=true)
+![Landing Page ](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Landing%20Page.png?raw=true)
 
 - **Features Page Image**
 
-![Features](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Features%20Page.png?raw=true)
+![Features](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Features%20Page.png?raw=true)
 
 - **Pricing Page**
 
-![Pricing Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Pricing%20page.png?raw=true)
+![Pricing Page](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Pricing%20page.png?raw=true)
 
 - **Integrations Page**
 
-![Integrations Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Integrations%20page.png?raw=true)
+![Integrations Page](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Integrations%20page.png?raw=true)
 
 - **Book a Demo Page**
 
-![Book a Demo Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/BookaDemo%20page.png?raw=true)
+![Book a Demo Page](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/BookaDemo%20page.png?raw=true)
 
 - **Login Portal**
 
-![Login Portal](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Login%20Portal.png?raw=true)
+![Login Portal](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Login%20Portal.png?raw=true)
 
 - **Sign Up Form**
 
-![Sign up form](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Sign%20Up%20Form.png?raw=true)
+![Sign up form](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Sign%20Up%20Form.png?raw=true)
 
 - **Timesheet Page**
 
-![Timesheet Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Bike%20Featues.png?raw=true)
+![Timesheet Page](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Bike%20Featues.png?raw=true)
