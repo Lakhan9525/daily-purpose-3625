@@ -40,28 +40,28 @@ HTML5, CSS3, React.js, Chakra-UI, Node.js, Express, MongoDB, React-router-dom, G
 
 - **Features Page Image**
 
-![Features](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Features%20Page.png)
+![Features](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Features%20Page.png)
 
 - **Pricing Page**
 
-![Pricing Page](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Pricing%20page.png)
+![Pricing Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Pricing%20page.png)
 
 - **Integrations Page**
 
-![Integrations Page](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Integrations%20page.png)
+![Integrations Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Integrations%20page.png)
 
 - **Book a Demo Page**
 
-![Book a Demo Page](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/BookaDemo%20page.png)
+![Book a Demo Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/BookaDemo%20page.png)
 
 - **Login Portal**
 
-![Login Portal](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Login%20Portal.png)
+![Login Portal](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Login%20Portal.png)
 
 - **Sign Up Form**
 
-![Sign up form](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Sign%20Up%20Form.png)
+![Sign up form](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Sign%20Up%20Form.png)
 
 - **Timesheet Page**
 
-![Timesheet Page](https://github.com/Lakhan9525/daily-purpose-3625/main/Website%20Sneak%20Peeks/Bike%20Featues.png)
+![Timesheet Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20Peeks/Bike%20Featues.png)
