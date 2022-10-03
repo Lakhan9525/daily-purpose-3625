@@ -27,7 +27,8 @@ app.use(
   })
 );
 app.use("/auth", authRoute);
-app.listen("8080", () => {
+const PORT=process.env.PORT || 8080;
+app.listen(PORT, () => {
   mongoose.connect(
     "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.5.4"
   );
