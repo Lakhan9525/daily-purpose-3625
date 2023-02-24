@@ -36,32 +36,32 @@ HTML5, CSS3, React.js, Chakra-UI, Node.js, Express, MongoDB, React-router-dom, G
 
 - **Landing Page Image**
 
-![Landing Page ](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20peeks/Landing%20Page.png)
+
+![Screenshot (102)](https://user-images.githubusercontent.com/102020617/221201995-303448f4-18d3-46d5-9076-9b1b9efe3d0c.png)
 
 - **Features Page Image**
 
-![Features](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20peeks/Features%20Page.png)
+
+![Screenshot (103)](https://user-images.githubusercontent.com/102020617/221202063-1713e897-8c90-4690-8be9-80af25202dec.png)
 
 - **Pricing Page**
 
-![Pricing Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20peeks/Pricing%20Page.png)
+
+![Screenshot (104)](https://user-images.githubusercontent.com/102020617/221202114-afc1b5f9-d496-490f-bb2e-acfa2bf6dbc7.png)
 
 - **Integrations Page**
 
-![Integrations Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20peeks/Integrations%20Page.png)
+
+![Screenshot (105)](https://user-images.githubusercontent.com/102020617/221202168-51eb61b9-43b3-43cf-918f-3f649d1ab313.png)
 
 - **Book a Demo Page**
 
-![Book a Demo Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20peeks/BookaDemo%20Page.png)
+
+![Screenshot (103)](https://user-images.githubusercontent.com/102020617/221202227-a509b800-bcb7-4a0f-a3b1-33ef7d33fa46.png)
 
 - **Login Portal**
 
-![Login Portal](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20peeks/Login%20Portal.png)
 
-- **Sign Up Form**
+![Screenshot (106)](https://user-images.githubusercontent.com/102020617/221202280-5e6d213e-4425-4ec8-9024-697600a4bd05.png)
 
-![Sign up form](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20peeks/Sign%20Up%20Form.png)
-
-- **Timesheet Page**
-
-![Timesheet Page](https://github.com/Lakhan9525/daily-purpose-3625/blob/main/Website%20Sneak%20peeks/TimesheetPage.png)
+        #####Thanks for visiting this page####
